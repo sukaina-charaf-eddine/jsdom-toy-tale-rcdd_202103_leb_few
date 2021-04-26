@@ -34,14 +34,14 @@ addBtn.addEventListener('click', () => {
 const initialize = () => {
   fetch('http://localhost:3000/toys')
     .then(resp => resp.json())
-    
+
     .then(toys => toys.forEach(showToy))
 }
 
 const showToy = toy => {
   let thisToy = toy
   let toyDiv = document.createElement('div')
-  
+
   toyDiv.classList.add('card')
   toyDiv.innerHTML = `
     <h2>${toy.name}</h2>
