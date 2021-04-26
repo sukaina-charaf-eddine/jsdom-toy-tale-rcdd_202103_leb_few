@@ -114,4 +114,4 @@ const createToy = toy => {
 
 
 
-initialize()
+initialize();
